@@ -100,7 +100,16 @@ th {
     position:center;
     width: 70%;
     height: 150px;
+    margin-bottom: 40px;
 }
 .height {
     height: 200px;
+}
+.CenterTable {
+    margin: auto;
+    width: 80%;
+    padding: 20px;
+}
+.fieldsettextare {
+    width: 100%;
 }
