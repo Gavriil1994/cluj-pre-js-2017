@@ -16,11 +16,13 @@
 <body>
     <div class="CenterTable">
         <section  class="CandidateForm ">
-            <input type="candidate" placeholder="Candidate">
-            <input type="interviewer" placeholder="Interviewer">
-            <input type="Date" placeholder="Date">
+            <input class="inputs" type="candidate" placeholder="Candidate">
+            <input  class="inputs" type="interviewer" placeholder="Interviewer">
+            <input  class="inputs" type="Date" placeholder="Date">
         </section>
-   
+       
+        <label class="legend label">Technoical Level</label>
+       
         <table class="formdimension">
             <tr>
               <th>Trainee</th>
@@ -28,7 +30,7 @@
               <th>Middle</th>
               <th>Senior</th>
             </tr>
-            <tr>
+            <tr class="bottomTable">
               <td><input type="radio"></td>
               <td><input type="radio"><input type="radio"><input type="radio"></td>
               <td><input type="radio"><input type="radio"><input type="radio"></td>
@@ -36,74 +38,90 @@
             </tr>
         </table>
    
-        <section class="fieldset" >
+        <label class="legend label">Should the candidate be hired?</label>
+        <section>
             <form >
-                <textarea>
-                    The type of project that is suitable for the candidate
-                            Is guidance required for the candidate</textarea>
+                <textarea placeholder="The type of project that is suitable for the candidate.&#10;Is guidance required for the candidate"></textarea>
             </form>
         </section>
-
-        <section class="height">
+        <label class="legend label">General Impression</label>
+        <section >
             <form>
-                <textarea>*required</textarea>
+                <textarea placeholder="*required"></textarea>
             </form>
         </section>
-
-        <section class="height">
+        <label class="legend label">Workflow,Leadership &amp Soft Skills</label>
+        <section>
             <form>
-                <textarea>Describe the environment in which the candidate works.
-                            Describe any guidance or management experience.
-                        </textarea>
+                <textarea placeholder="Describe the environment in which the candidate works.&#10;Describe any guidance or management experience."></textarea>
                     
             </form>
         </section>
     
 
-        <section style="width: 70%;">
+        <section>
             <fieldset class="fieldset">
-                <legend class="legend">OOP, Design Patterns</legend>
-                <li> 
+
+              <legend class="legend">OOP, Design Patterns</legend>
+               
+                 <ul>
+
+         <li>
                     <label>Classes</label>
                     <select>
                         <option value="evaluation">Evaluatuion</option>
                     </select>
-                    <label>Exception handling            </label>
+        </li>
+         <li>
+                    <label>Exception handling</label>
                     <select>
                         <option value="evaluation">Evaluatuion</option>
                     </select>
+        </li>
+               
+        <li>
                     <label>Version Control</label>
                     <select>
                         <option value="evaluation">Evaluatuion</option>
                     </select>
-                </li>            
-                
-                <li> 
+        </li>
+                          
+    <li>
                     <label>Acces modifiers</label>
                     <select>
                         <option value="evaluation">Evaluatuion</option>
                     </select>
-                    <label>Design Patterns</label>
+    </li>
+
+                <li> <label>Design Patterns</label>
                     <select>
                         <option value="evaluation">Evaluatuion</option>
                     </select>
+     </li>  
+               
+     <li> 
                     <label>Issue Tracking</label>
                     <select>
                         <option value="evaluation">Evaluatuion</option>
                     </select>
-                </li>
+    </li>
                         
-                <li> 
-                    <label>Polymorphism</label>
+                 
+     <li>   
+        <label>Polymorphism</label>
                     <select>
                         <option value="evaluation">Evaluatuion</option>
                     </select>
-                    <label>RegEx</label>
+     </li>
+     <li>  
+                <label>RegEx</label>
                     <select>
                         <option value="evaluation">Evaluatuion</option>
                     </select>
-                </li>
+    </li>
+            </ul>
             </fieldset>
+        
 
             <fieldset class="fieldset">
                 <legend class="legend">HTTP</legend>
@@ -186,236 +204,159 @@
                 </li>
                
                <li> 
-                   <label>Selectors</label>
-                    <select>
+                    <label>Selectors</label>
+                      <select>
                           <option value="evaluation">Evaluatuion</option>
                       </select>
-                      <label>Styling</label>
+                    <label>Styling</label>
                       <select>
-                            <option value="evaluation">Evaluatuion</option>
-                        </select>
-                        <label>Dynamic Stylesheets</label>
+                          <option value="evaluation">Evaluatuion</option>
+                      </select>
+                    <label>Dynamic Stylesheets</label>
                         <select>
                               <option value="evaluation">Evaluatuion</option>
                           </select>
-                        </li>
+                        ]
+                </li>
     </fieldset>
 
 
-    <fieldset class="fieldset">
-      <legend class="legend">Javascript</legend>
-      <li> 
+      <fieldset class="fieldset">
+       <legend class="legend">Javascript</legend>
+    <li> 
           <label>Data types & variables</label>
-           <select>
+             <select>
                  <option value="evaluation">Evaluatuion</option>
              </select>
-             <label>object manipulation</label>
+          <label>object manipulation</label>
              <select>
                    <option value="evaluation">Evaluatuion</option>
                </select>
-               <label>DOM Manipulation</label>
+          <label>DOM Manipulation</label>
                <select>
                      <option value="evaluation">Evaluatuion</option>
-                 </select>
-               </li>
+               </select>
+    </li>
 
 
-
-               <li> 
-                  <label>Functions</label>
-                   <select>
+    <li> 
+        
+          <label>Functions</label>
+                <select>
                          <option value="evaluation">Evaluatuion</option>
                      </select>
-                     <label>Templating        </label>
+          <label>Templating        </label>
                      <select>
                            <option value="evaluation">Evaluatuion</option>
                        </select>
-                       <label>Event Handling</label>
+          <label>Event Handling</label>
                        <select>
                              <option value="evaluation">Evaluatuion</option>
                          </select>
-                       </li>
+     </li>
 
 
-                       <li> 
-                          <label>Prototype & OOP</label>
-                           <select>
-                                 <option value="evaluation">Evaluatuion</option>
-                             </select>
-                             <label>Testing (unit,E2E)          </label>
-                             <select>
+     <li> 
+          <label>Prototype & OOP</label>
+                       <select>
+                             <option value="evaluation">Evaluatuion</option>
+                       </select>
+          <label>Testing (unit,E2E)          </label>
+                       <select>
                                    <option value="evaluation">Evaluatuion</option>
-                               </select>
+                       </select>
                                <label>Ajax</label>
-<<<<<<< Updated upstream
                                <select>
                                      <option value="evaluation">Evaluatuion</option>
                                  </select>
-                               </li>
-
-=======
-        
-        
-        
->>>>>>> Stashed changes
-
-                               <li> 
-                                  <label>Debugging</label>
-                                   <select>
-                                         <option value="evaluation">Evaluatuion</option>
-                                     </select>
-                                     <label>Websockets         </label>
-                                     <select>
-                                           <option value="evaluation">Evaluatuion</option>
-                                       </select>
-                                       <label>Tooling</label>
-                                       <select>
-                                             <option value="evaluation">Evaluatuion</option>
-                                         </select>
-                                       </li>
-<<<<<<< Updated upstream
+    </li>
 
 
-                                       <li> 
-                                          <label>Libraries</label>
-                                           <select>
-                                                 <option value="evaluation">Evaluatuion</option>
-                                             </select>
-                                             <label>Promises           </label>
-                                             <select>
-                                                   <option value="evaluation">Evaluatuion</option>
-                                               </select>
-                                               <label>Browser Engines</label>
-                                               <select>
-                                                     <option value="evaluation">Evaluatuion</option>
-                                                 </select>
-                                               </li>
+    <li> 
+             <label>Debugging</label>
+                        <select>
+                                    <option value="evaluation">Evaluatuion</option>
+                         </select>
+             <label>Websockets</label>
+                        <select>
+                                 <option value="evaluation">Evaluatuion</option>
+                         </select>
+             <label>Tooling</label>
+                        <select>
+                                <option value="evaluation">Evaluatuion</option>
+                        </select>
+    </li>
 
 
-                                               <li> 
-                                                  <label>Frameworks</label>
-                                                   <select>
-                                                         <option value="evaluation">Evaluatuion</option>
-                                                     </select>
+    <li> 
+             <label>Libraries</label>
+                         <select>
+                                 <option value="evaluation">Evaluatuion</option>
+                        </select>
+             <label>Promises</label>
+                       <select>
+                                 <option value="evaluation">Evaluatuion</option>
+                      </select>
+             <label>Browser Engines</label>
+                        <select>
+                                  <option value="evaluation">Evaluatuion</option>
+                        </select>
+    </li>
+
+
+    <li> 
+              <label>Frameworks</label>
+                         <select>
+                                     <option value="evaluation">Evaluatuion</option>
+                         </select>
                                                     
-                                                       </li>
+    </li>
      
     </fieldset>
 
     <fieldset class="fieldset">
-        <legend class="legend">NodeJS</legend>
-        <li> 
-            <label>Backend frameworks</label>
-             <select>
-                   <option value="evaluation">Evaluatuion</option>
+        
+        
+          <legend class="legend">NodeJS</legend>
+    <li> 
+        <label>Backend frameworks</label>
+                <select>
+                         <option value="evaluation">Evaluatuion</option>
                </select>
-               <label>Templating            </label>
-               <select>
-                     <option value="evaluation">Evaluatuion</option>
-                 </select>
-                 <label>DOM Manipulation</label>
-                 <select>
-                       <option value="evaluation">Evaluatuion</option>
-                   </select>
-                 </li>
+        <label>Templating            </label>
+                <select>
+                         <option value="evaluation">Evaluatuion</option>
+                </select>
+        <label>DOM Manipulation</label>
+                <select>
+                         <option value="evaluation">Evaluatuion</option>
+                </select>
+    </li>
                   
                  
                  
-                 <li> 
-                     <label>Unit Testing</label>
-                      <select>
-                            <option value="evaluation">Evaluatuion</option>
-                        </select>
+     <li> 
+        <label>Unit Testing</label>
+                 <select>
+                        <option value="evaluation">Evaluatuion</option>
+                 </select>
                         
-                          </li>
+     </li>
       </fieldset>
   
   </section>
        
 
     <button class="button button1">Submit</button>
-=======
->>>>>>> Stashed changes
 
+    <footer  id='footer'>
+        <div class="container">
+            <p class="footer-paragraph"> Copyright@Softvision 2017 </p>
+            </div>
+            </footer>
+    
 
-<<<<<<< Updated upstream
-=======
-                                       
-        
-        
-                                               <li> 
-                                                  <label>Libraries</label>
-                                                   <select>
-                                                         <option value="evaluation">Evaluatuion</option>
-                                                     </select>
-                                                     <label>Promises           </label>
-                                                     <select>
-                                                           <option value="evaluation">Evaluatuion</option>
-                                                       </select>
-                                                       <label>Browser Engines</label>
-                                                       <select>
-                                                             <option value="evaluation">Evaluatuion</option>
-                                                         </select>
-                                                       </li>
-        
-        
-                                                       <li> 
-                                                          <label>Frameworks</label>
-                                                           <select>
-                                                                 <option value="evaluation">Evaluatuion</option>
-                                                             </select>
-                                                            
-                                                               </li>
-             
-            </fieldset>
-        
-            <fieldset class="fieldset">
-                <legend class="legend">NodeJS</legend>
-                <li> 
-                    <label>Backend frameworks</label>
-                     <select>
-                           <option value="evaluation">Evaluatuion</option>
-                       </select>
-                       <label>Templating            </label>
-                       <select>
-                             <option value="evaluation">Evaluatuion</option>
-                         </select>
-                         <label>DOM Manipulation</label>
-                         <select>
-                               <option value="evaluation">Evaluatuion</option>
-                           </select>
-                         </li>
-                          
-                         
-                         
-                         <li> 
-                             <label>Unit Testing</label>
-                              <select>
-                                    <option value="evaluation">Evaluatuion</option>
-                                </select>
-                                
-                                  </li>
-              </fieldset>
-          
-    </section>
-       
-
-    <button class="button button1">Submit</button>
-
-</section>
-</div>
-            </section>
-           <section>
-            <footer  id='footer'>
-                <div class="container">
-                    <p class="footer-paragraph"> Copyright@Softvision 2017 </p>
-                    </div>
-                    </footer>
-           </section>
-
-
->>>>>>> Stashed changes
-
+    </div>
 </body>
 
 
