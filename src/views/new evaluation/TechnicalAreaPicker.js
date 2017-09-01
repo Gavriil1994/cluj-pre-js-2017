@@ -1,14 +1,13 @@
 const Component = function (options = {}) {
-    const arr = options.map(el =>
-    `<div class="content-box-fields">
-    <fieldset class="content-box-evaluations content-box-evaluations-skin">
+    const arr = options.map(el => `
+        <div class="content-box-fields">
+            <fieldset class="content-box-evaluations content-box-evaluations-skin">
+                ${DropdownSelector(el)}
+            </fieldset>
+        </div>
+    `);
     
-${DropdownSelector(el)}
-</fieldset>
-</div>`);
-return arr.join('');
+    return arr.join('');
 };
-    
-const TechnicalAreaPicker = (options = {}) =>
-    
-`${Component(getTechnicalAreaData())}`;
+
+const TechnicalAreaPicker = (options = {}) => Component(getTechnicalAreaData())
