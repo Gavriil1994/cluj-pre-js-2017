@@ -11,3 +11,4 @@ const TextareaSection = function (options = {}) {
     const section = options.map(Textarea); // (t) => Textarea(t)
     return section.join('');
 };
+

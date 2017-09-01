@@ -11,53 +11,57 @@ textarea {
     font-size: 16px;
     resize: none;
     margin-bottom: 20px;
-}
 
-.button {
-    background-color:#0CB3EE;
-    border: none;
-    color: white;
-    float:right;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    transition-duration: 0.4s;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    margin-bottom: 100px;
-}
+  }
+    .button {
+        background-color:#0CB3EE;
+        border: none;
+        color: white;
+        float:right;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        transition-duration: 0.4s;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        margin-bottom: 100px;
+    }
 
-.topnav {
-    background-color:white;
-    overflow: hidden;
-    border-bottom: 2px solid darkgray;
-    box-shadow:0px 1px 1px lightgray;
-}
+        .topnav {
+            background-color:white;
+            overflow: hidden;
+            border-bottom: 2px solid darkgray;
+            box-shadow:0px 1px 1px lightgray;
+           
+        }/* Style the links inside the navigation bar */
+        .topnav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 18px 20px;
+            text-decoration: none;
+            font-size: 17px;
+        
+        }
+        /* Change the color of links on hover */
+        .topnav a:hover {
+         
+            border-bottom-color: #0CB3EE;
+            
+        }
+    
 
-/* Style the links inside the navigation bar */
-.topnav a {
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 18px 20px;
-    text-decoration: none;
-    font-size: 17px;
-}
 
-/* Change the color of links on hover */
-.topnav a:hover {
-    border-bottom-color:7px solid #0CB3EE;
-
-}
     
 table {
     border-collapse: collapse;
     width: 70%;
     display: center;
     height: 150px;
+
 }
 
 th, td {
@@ -78,7 +82,7 @@ th {
     background-color: white;
     margin-bottom: 20px;
     border-collapse: collapse;
-}
+
 
 .legend {
     color: #0CB3EE;
@@ -86,6 +90,7 @@ th {
 }
 
 .container {
+
     position:fixed;
     left:0px;
     bottom:0px;
@@ -94,6 +99,7 @@ th {
     background:lightgray;
     margin: 0 ;
 }
+
 
 .footer-paragraph {
     font-size: 20px;
@@ -107,7 +113,10 @@ th {
     height: 150px;
     margin-bottom: 40px;
     display: inline-block;
+
     list-style-type: none;
+=======
+
 }
 .fildsetlong {
     height: 275px;
@@ -130,7 +139,7 @@ th {
 fieldset {
     display: inline-block;
     width: 100%;
-}
+
     
  .inputs {
      width: 33%;
@@ -138,20 +147,18 @@ fieldset {
      height: 35px;
      box-sizing: border-box;
      border: 0;
-}
 
-.inputs::placeholder{
-    border-bottom: 1px solid lightgray;
-}
-
-body {
-    background-color: #f2f2f2;
-}
-
-.CandidateForm{
-    margin-bottom: 40px;
-}
-
+    }
+    .inputs::placeholder{
+        border-bottom: 1px solid lightgray;
+    
+    }
+    body {
+        background-color: #f2f2f2;
+    }
+    .CandidateForm{
+        margin-bottom: 40px;
+    }
 .bottomTable {
     border:1px solid darkgray;
 }
@@ -161,6 +168,7 @@ body {
     margin-bottom:10px;
     display:table;
 }
+
 
 ul {
     list-style-type: none;
@@ -177,3 +185,4 @@ select{
     width:125px;
     margin-left: 50px;
 }
+

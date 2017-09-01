@@ -6,4 +6,3 @@ const CandidateDetailsForm = function () {
             <input type="Date" placeholder="Date">
         </section>
     `;
-};
