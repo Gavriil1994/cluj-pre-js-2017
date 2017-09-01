@@ -1,7 +1,6 @@
 body {
-  font: normal medium/1.4 sans-serif;
+    font: normal medium/1.4 sans-serif;
     color:darkslategray;
-        
 }
 table {
     border-collapse: collapse;
@@ -19,13 +18,12 @@ thead {
     border-bottom-color:  #00BFFF;
 }
 
-
-
- .topnav {
+.topnav {
     background-color:white;
     overflow: hidden;
-   
-}/* Style the links inside the navigation bar */
+}
+
+/* Style the links inside the navigation bar */
 .topnav a {
     float: left;
     display: block;
@@ -36,24 +34,22 @@ thead {
     font-size: 17px;
     border-bottom: 8px solid transparent;
 }
+
 /* Change the color of links on hover */
 .topnav a:hover {
- 
     border-bottom-color: #0CB3EE;
-    
 }
+
 .container {
-    
-        position:fixed;
-        left:0px;
-        bottom:0px;
-        height:60px;
-        width:100%;
-        background:lightgray;
-     }
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:60px;
+    width:100%;
+    background:lightgray;
+}
 
 .footer-paragraph {
     font-size: 20px;
     float:right;
 }
-
