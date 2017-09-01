@@ -5,102 +5,94 @@ function EvaluationsPage(options) {
     ];
     const rows = [
         {
-        name: 'Popescu Adrian',
-        technology: 'Javascript',
-        level: 'Mid 2'
-    },
-    {
-        name: 'Dragan Roxana',
-        technology: 'PHP',
-        level: 'Mid 1'
-    },
-    {
-        name: 'Florescu Mihai',
-        technology: 'Javascript',
-        level: 'Junior 3'
-    },
-    {
-        name: 'Ghoreghe Andrei',
-        technology: 'Ruby',
-        level: 'Mid 2'
-    }
-];
-    return `
-    ${NAV()}
-    ${EvaluationsTable({
-        items: rows,
-        itemHeadings: headings
-    })}
-    ${Footer()}
-    `
-    ;
-}
-    
-function EvaluationsTableHeader(options) {
-        const headings = [];
-
-        options.headings.forEach(function(el) {
-            const generatedEl = `
-            <th>${el}</th>`;
-            headings.push(generatedEl);
-        });
-
-        const headingsEl = `
-        ${headings.join('')}`;
-
-        return `
-        <tr>
-        ${headingsEl}
-        </tr>
-        `;
+            name: 'Popescu Adrian',
+            technology: 'Javascript',
+            level: 'Mid 2'
+        },
+        {
+            name: 'Dragan Roxana',
+            technology: 'PHP',
+            level: 'Mid 1'
+        },
+        {
+            name: 'Florescu Mihai',
+            technology: 'Javascript',
+            level: 'Junior 3'
+        },
+        {
+            name: 'Ghoreghe Andrei',
+            technology: 'Ruby',
+            level: 'Mid 2'
         }
+    ];
+    
+    return `
+        ${NAV()}
+        ${EvaluationsTable({
+            items: rows,
+            itemHeadings: headings
+        })}
+        ${Footer()}
+    `;
+}
 
-        function EvaluationTableRow( options={}) {
-        return `
+function EvaluationsTableHeader(options) {
+    const headings = [];
+
+    options.headings.forEach(function (el) {
+        const generatedEl = `
+            <th>${el}</th>`;
+        headings.push(generatedEl);
+    });
+
+    const headingsEl = `${headings.join('')}`;
+
+    return `
+        <tr>
+            ${headingsEl}
+        </tr>
+    `;
+}
+
+function EvaluationTableRow(options = {}) {
+    return `
         <tr>
            <td>${options.name}</td>
            <td>${options.technology}</td>
            <td>${options.level}</td>
            <td> Detalii <button>+</button></td>
-           </tr>
-           `;
+        </tr>
+    `;
 }
 
-function EvaluationTableBody (options={}) {
+function EvaluationTableBody(options = {}) {
     //const rowsElements=[];
-    const rowsElements = options.items.map(function(row0bj) {
+    const rowsElements = options.items.map(function (row0bj) {
         return EvaluationTableRow(row0bj);
         //rowsElements.push(generateRow);
     });
-    const rowEl = rowsElements.join('');
 
-    return`
-    ${rowEl}
-    `;
+    return rowsElements.join('');
 }
 
-function EvaluationsTable(options={}) {
+function EvaluationsTable(options = {}) {
 
     return ` 
-   <div class = "tableEvaluations">
-    <table>
-    
-    ${EvaluationsTableHeader({
-        headings: options.itemHeadings
-    })}
-
-    ${EvaluationTableBody({
-
-        items: options.items
-    })}
-    
-    </table>
-    </div>
+        <div class = "tableEvaluations">
+            <table>
+                ${EvaluationsTableHeader({
+                    headings: options.itemHeadings
+                })}
+                ${EvaluationTableBody({
+                    items: options.items
+                })}
+            </table>
+        </div>
     `;
 }
 
 
-window.onload = function() {
+window.onload = function () {
     const appEl = document.querySelector('#app');
     appEl.innerHTML = EvaluationsPage();
 }
