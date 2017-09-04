@@ -1,8 +1,9 @@
 body {
-  font: normal medium/1.4 sans-serif;
+    font: normal medium/1.4 sans-serif;
     color:darkslategray;
         
 }
+
 table {
     border-collapse: collapse;
     width: 100%;
@@ -13,13 +14,13 @@ th, td {
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
+
 thead { 
     color:white;
     background-color: #00BFFF;
     border-bottom-color:  #00BFFF;
 }
 
-<style>
 .button {
     background-color: #0DB4ED; /* Green */
     border: none;
@@ -31,8 +32,3 @@ thead {
     margin: 4px 2px;
     cursor: pointer;
 }
-
-
-}
-
-
