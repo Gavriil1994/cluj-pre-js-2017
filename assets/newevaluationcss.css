@@ -156,10 +156,10 @@ body {
     border:1px solid darkgray;
 }
 
-.label {
+label {
     margin-left: 50px;
     margin-bottom:10px;
-    display:table;
+  
 }
 
 ul {
@@ -169,11 +169,12 @@ ul {
 li{
     float: left;
     width: 30%;
+    display:flex;
 
 }
 
 select{
     height: 30px;
     width:125px;
-    margin-left: 50px;
+    
 }

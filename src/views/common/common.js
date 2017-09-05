@@ -11,12 +11,13 @@ const Footer = function() {
 }
 const NAV = function(options={}) {
     return `
-    <section>
-    <footer  id='footer'>
-        <div class="container">
-            <p class="footer-paragraph"> Copyright@Softvision 2017 </p>
-            </div>
-            </footer>
-   </section>
+    <div 
+    class="topnav" id="Topnav">
+    <img src="assets/logo.png" style="width:15%; height:30px;float:left">
+    <a href="#evaluations">Evaluations</a>
+    <a href="#newevaluations">New Evaluations</a>
+    <a style="float:right" href="#logout">Logout</a>
+</div>
+`
     
 }
