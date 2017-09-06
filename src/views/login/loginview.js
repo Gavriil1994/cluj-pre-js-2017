@@ -14,16 +14,15 @@ const LoginForm = function(option) {
      <input type="text"><span class="highlight"></span><span class="bar"></span>
      <label>Username</label>
    </div>
-   <div class="group">
+   <div class="group Textfield">
      <input type="email">
        <span class="highlight"></span>
        <span class="bar"></span>
      <label>Password</label>
    </div>
-   <button type="button" class="button buttonBlue">
+   <button class="button buttonBlue">Login</button>
      
        </div>
-   </button>
  </form>
  </section>
     `;

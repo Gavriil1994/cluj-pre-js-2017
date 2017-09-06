@@ -30,6 +30,7 @@ form {
 .group { 
 	position: relative; 
 	margin-bottom: 45px; 
+	float:left;
 }
 
 input {
@@ -65,6 +66,7 @@ label {
 
 
 .button {
+  height:60px;
   position: relative;
   display: inline-block;
   padding: 12px 24px;
@@ -74,18 +76,16 @@ label {
   color: #fff;
   font-size: 20px;
   line-height: 22px;
-  -webkit-font-smoothing: antialiased;
   text-align: center;
   letter-spacing: 1px;
   background: transparent;
   border: 0;
   border-bottom: 0px solid #3160B6;
   cursor: pointer;
-  -webkit-transition:all 0.15s ease;
   transition: all 0.15s ease;
 }
-.button:focus { outline: 0; }
 
+.button:focus { outline: 0; }
 
 
 .buttonBlue {
@@ -94,7 +94,4 @@ label {
 }
 
 .buttonBlue:hover { background: #357bd8; }
-
-
-
 
